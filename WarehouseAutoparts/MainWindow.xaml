@@ -5,6 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarehouseAutoparts"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="771">
-    
+        Title="Autoparts-Авторизация" Height="510" Width="360" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="90"/>
+
+        </Grid.RowDefinitions>
+    </Grid>
 </Window>
