@@ -121,10 +121,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Sourse\Images\MainToolBarIMG\cross_inactive.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Sourse\Images\MainToolBarIMG\cross_active.png" />
-    <Resource Include="Sourse\Images\MainToolBarIMG\cross_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sourse\Images\MainToolBarIMG\feature_active.png" />
+    <Resource Include="Sourse\Images\MainToolBarIMG\feature_inactive.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,7 +13,7 @@
             <RowDefinition Height="300"/>
             <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
-        
+        <!--TOOL BAR WINDOW AREA-->
         <Grid Name="ToolBarAllProgram" Grid.Row="0">
             <Polygon Fill="Gray" Opacity="0.5"
                  Points="107,0,
@@ -21,10 +21,39 @@
                  249,7,
                  257,0"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Image Width="25" Height="25" />
-                <Image Width="25" Height="25"/>
+                <Image Name="MinimizeWindow_But" Width="25" Height="25">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="/Sourse/Images/MainToolBarIMG/feature_inactive.png"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=MinimizeWindow_But}" Value="True">
+                                    <Setter Property="Source" Value="/Sourse/Images/MainToolBarIMG/feature_active.png"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+
+                <Image Name="ExitWindow_But" Width="25" Height="25">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="/Sourse/Images/MainToolBarIMG/cross_inactive.png"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=ExitWindow_But}" Value="True">
+                                    <Setter Property="Source" Value="/Sourse/Images/MainToolBarIMG/cross_active.png"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
             </StackPanel>
         </Grid>
-       
+        <!--END TOOL BAR WINDOW AREA-->
+        
+        <!--LOGO AREA-->
+        <Grid Name="LogoArea" Grid.Row="1">
+            
+        </Grid>
+        <!--END LOGO AREA-->
     </Grid>
 </Window>
