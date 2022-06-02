@@ -5,14 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarehouseAutoparts"
         mc:Ignorable="d"
-        Title="Autoparts-Авторизация" Height="510" Width="360" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="Autoparts-Авторизация" Height="510" Width="360" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Background="#FFFBFBFB">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="300"/>
             <RowDefinition Height="90"/>
-
         </Grid.RowDefinitions>
+        
+        <Grid Name="ToolBarAllProgram" Grid.Row="0">
+            <Polygon Fill="Gray" Opacity="0.5"
+                 Points="107,0,
+                 115,7,
+                 249,7,
+                 257,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Width="25" Height="25" />
+                <Image Width="25" Height="25"/>
+            </StackPanel>
+        </Grid>
+       
     </Grid>
 </Window>
