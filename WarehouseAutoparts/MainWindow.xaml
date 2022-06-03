@@ -52,7 +52,7 @@
         
         <!--LOGO AREA-->
         <Grid Name="LogoArea" Grid.Row="1">
-            
+            <Image Name="Logo" Source="/Sourse/Images/logo.png" />
         </Grid>
         <!--END LOGO AREA-->
     </Grid>
