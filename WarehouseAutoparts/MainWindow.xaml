@@ -14,7 +14,7 @@
             <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
         <!--TOOL BAR WINDOW AREA-->
-        <Grid Name="ToolBarAllProgram" Grid.Row="0" MouseDown="ToolBarAllProgram_MouseDown">
+        <Grid Name="ToolBarAllProgram" Grid.Row="0" MouseLeftButtonDown="ToolBarAllProgram_MouseLeftButtonDown">
             <Polygon Fill="Gray" Opacity="0.5"
                  Points="107,0,
                  115,7,
@@ -49,11 +49,37 @@
             </StackPanel>
         </Grid>
         <!--END TOOL BAR WINDOW AREA-->
-        
+
         <!--LOGO AREA-->
         <Grid Name="LogoArea" Grid.Row="1">
             <Image Name="Logo" Source="/Sourse/Images/logo.png" />
         </Grid>
         <!--END LOGO AREA-->
+
+        <!-- AUTHORIZATION AREA -->
+        <Grid Name="AuthorizationArea" Grid.Row="2">
+            <Label Name="NameArea" FontSize="30" FontWeight="Bold" FontStyle="Normal" FontStretch="Medium"
+             HorizontalAlignment="Center" VerticalAlignment="Top" Padding="0,0,0,0" Margin="0,0,0,0">Авторизация</Label>
+
+            <Label Name="LoginLabel" FontSize="16"
+             HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Margin="10,63,0,0">Логин:</Label>
+
+            <TextBox Name="Login_textBox" Height="30" Padding="0" Margin="10,89,10,181" FontSize="20" BorderBrush="#FF003FFD" Background="#FFEFEFEF"/>
+
+            <Label Name="PasswordLabel" FontSize="16"
+             HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0" Margin="10,0,0,0">Пароль:</Label>
+
+            <PasswordBox Name="Password_textBox" Height="30" Padding="0"  FontSize="20" BorderBrush="#FF003FFD" Background="#FFEFEFEF"  Margin="10,166,10,104"   />
+
+            <Button Name="Login_Button" Margin="125,255,125,10" Content="Вход" FontSize="20" FontWeight="Normal"  />
+        </Grid>
+        <!-- END AUTHORIZATION AREA -->
+        
+        <!--FOOTHER AREA-->
+        <Grid Name="FootherArea" Grid.Row="3">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" TextDecorations="Underline" FontWeight="Normal" FontStyle="Italic" TextWrapping="Wrap" TextAlignment="Center">Если вы забыли свой пароль, 
+                то обратитесь к администратору</TextBlock>
+        </Grid>
+        <!--END FOOTHER AREA-->
     </Grid>
 </Window>

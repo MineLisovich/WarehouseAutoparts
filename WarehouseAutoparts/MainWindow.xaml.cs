@@ -42,12 +42,9 @@ namespace WarehouseAutoparts
             WindowState = WindowState.Minimized;
         }
 
-        private void ToolBarAllProgram_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ToolBarAllProgram_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
+            this.DragMove();
         }
     }
 }
