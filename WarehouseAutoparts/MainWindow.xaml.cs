@@ -24,5 +24,30 @@ namespace WarehouseAutoparts
         {
             InitializeComponent();
         }
+
+        private void ExitWindow_But_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите выйти ?", "Предупреждение", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                //do no stuff
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void MinimizeWindow_But_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void ToolBarAllProgram_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
     }
 }
